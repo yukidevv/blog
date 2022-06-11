@@ -4,7 +4,7 @@
 hugo
 
 cd public 
-msg="update 'date'"
+msg="update $(date)"
 #add
 git add .
 if [ $# -eq 1 ]; then
