@@ -1,0 +1,24 @@
+baseURL: https://Yukiprog.github.io
+languageCode: en-us
+title: Blogだお
+theme: PaperMod
+
+params:
+  profileMode:
+    enabled: false
+    title: BlogBlog
+
+  homeInfoParams:
+    Title: 徒然なるままに書いていければなと 
+  socialIcons:
+    - name: twitter
+      url: https://twitter.com/nomad0481
+    - name: github
+      url: https://github.com/Yukiprog
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: posts
+      weight: 10
