@@ -3,7 +3,7 @@ Github pagesで運用しているブログの中身
 
 # 記事の作成方法
 ```
-hugo new posts/hello-world.md
+hugo new post/hello-world.md
 ```
 
 # 記事内容の確認とビルド

@@ -18,7 +18,11 @@ params:
 
 menu:
   main:
+    - identifier: about  
+      name: About
+      url: about/
+      weight: 10
     - identifier: blog
       name: Blog
-      url: posts
+      url: post/
       weight: 10
