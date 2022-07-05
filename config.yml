@@ -2,6 +2,7 @@ baseURL: https://Yukiprog.github.io
 languageCode: en-us
 title: Blogだお
 theme: PaperMod
+pluralizeListTitles: false
 
 params:
   profileMode:
@@ -20,7 +21,7 @@ menu:
   main:
     - identifier: about  
       name: About
-      url: about/
+      url: about/about
       weight: 10
     - identifier: blog
       name: Blog
