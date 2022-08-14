@@ -5,7 +5,7 @@
 	path = public
 	url = git@github.com:yukidevv/yukidevv.github.io.git
   branch = master
-[submodule "themes/Papermod"]
-	path = themes/Papermod
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 
