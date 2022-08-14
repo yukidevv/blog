@@ -3,7 +3,7 @@
 	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
 [submodule "public"]
 	path = public
-	url = git@github.com:Yukiprog/Yukiprog.github.io.git
+	url = git@github.com:yukidevv/yukidevv.github.io.git
   branch = master
 [submodule "themes/Papermod"]
 	path = themes/Papermod
