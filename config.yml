@@ -10,7 +10,7 @@ params:
     title: BlogBlog
 
   homeInfoParams:
-    Title: yukidevv.ブロク 
+    Title: yukidevv 
   socialIcons:
     - name: twitter
       url: https://twitter.com/nomad0481
