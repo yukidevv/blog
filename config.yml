@@ -1,6 +1,6 @@
-baseURL: https://Yukiprog.github.io
+baseURL: https://yukidevv.github.io
 languageCode: en-us
-title: Blogだお
+title: Blog
 theme: PaperMod
 pluralizeListTitles: false
 
@@ -10,12 +10,12 @@ params:
     title: BlogBlog
 
   homeInfoParams:
-    Title: 徒然なるままに書いていければなと 
+    Title: yukidevv.ブロク 
   socialIcons:
     - name: twitter
       url: https://twitter.com/nomad0481
     - name: github
-      url: https://github.com/Yukiprog
+      url: https://github.com/yukidevv
 
 menu:
   main:
