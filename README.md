@@ -1,6 +1,12 @@
 # blog
 Github pagesで運用しているブログの中身
 
+# Clone
+サブモジュール含めてCloneする
+```
+git clone --recursive {git@github.com:yukidevv/blog.git}
+```
+
 # 記事の作成方法
 ```
 hugo new post/hello-world.md
