@@ -28,6 +28,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
+          #publish_branch: main
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: yukidevv/yukidevv.github.io
           publish_dir: ./public
