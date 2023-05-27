@@ -17,7 +17,6 @@ params:
 
       - PGP Public [Key](content/yuki.asc) (Fingerprint: E97D 6124 2700 292C 4F45 E4D0 B793 8CF5 1D1A 72C8)
 
-      - Subscrive via [RSS](https://yukidevv.github.io/index.xml)
   socialIcons:
     - name: twitter
       url: https://twitter.com/nomad0481
@@ -25,6 +24,8 @@ params:
       url: https://github.com/yukidevv
     - name: email
       url: mailto:nomad048@gmail.com
+    - name: rss
+      url: https://yukidevv.github.io/index.xml
 menu:
   main:
     - identifier: about  
