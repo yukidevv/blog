@@ -1,4 +1,4 @@
-# blog
+# Blog
 Github pagesで運用しているブログの中身
 
 # Clone
@@ -6,6 +6,14 @@ Github pagesで運用しているブログの中身
 ```
 git clone --recursive {git@github.com:yukidevv/blog.git}
 ```
+
+# Pull
+サブモジュール含めての最新化
+```
+git pull
+git submodule update --init --recursive
+```
+
 
 # 記事の作成方法
 ```
