@@ -1,6 +1,6 @@
-baseURL: https://yukidevv.github.io
+baseURL: https://yukidev.net
 languageCode: en-us
-title: yukidevv
+title: yukidev
 theme: PaperMod
 pluralizeListTitles: false
 
@@ -11,7 +11,7 @@ params:
     favicon32x32: "assets/favicon-32x32.png" 
     apple_touch_icon: "assets/apple-touch-icon.png"
   homeInfoParams:
-    Title: yukidevv 
+    Title: yukidev 
     Content: >
       Welcome to my blog.
 
@@ -25,7 +25,7 @@ params:
     - name: email
       url: mailto:nomad048@gmail.com
     - name: rss
-      url: https://yukidevv.github.io/index.xml
+      url: https://yukidev.net/index.xml
 menu:
   main:
     - identifier: about  
