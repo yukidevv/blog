@@ -28,14 +28,3 @@ hugo server -D
 draft: true<br>
 ↓<br>
 draft: false
-
-ローカルで記事の内容に問題がないことを確認後、以下のスクリプトでビルドを行う<br>
-Github pages、Blogレポジトリのpushも合わせて実行する<br>
-```
-./push.sh
-```
-
-コミットメッセージを変更したい場合は引数に指定する
-```
-./push.sh "another message"
-```
