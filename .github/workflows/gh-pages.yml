@@ -36,14 +36,13 @@ jobs:
       
       - name: Build Hugo
         run: |
-          cd www
           hugo          
       
       - name: upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: www/public
+          path: public
   
   deploy:
     needs: build
@@ -61,7 +60,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: my-artifact
-          path: www/public # 展開先
+          path: public # 展開先
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@master
@@ -74,5 +73,5 @@ jobs:
       - name: Upload files to the production website with the AWS CLI
         run: |
           echo "uploding to s3 ..."
-          aws s3 sync www/public s3://${{ secrets.S3_BUCKET }}/ --size-only --delete
+          aws s3 sync public s3://${{ secrets.S3_BUCKET }}/ --size-only --delete
           aws cloudfront create-invalidation --region ap-northeast-1 --distribution-id E3I59QUS6FUN5Y --paths "/*"
