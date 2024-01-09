@@ -1,5 +1,5 @@
 # Blog
-Github pagesで運用しているブログの中身
+AWSで運用しているブログの中身
 
 # Clone
 サブモジュール含めてCloneする
