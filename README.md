@@ -1,5 +1,5 @@
 # Blog
-AWSで運用しているブログの中身
+AWSで運用しているブログ
 
 # Clone
 サブモジュール含めてCloneする
@@ -14,10 +14,9 @@ git pull
 git submodule update --init --recursive
 ```
 
-
 # 記事の作成方法
 ```
-hugo new post/hello-world.md
+hugo new post/xxxx.md
 ```
 
 # 記事内容の確認とビルド
