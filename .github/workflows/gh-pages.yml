@@ -74,4 +74,4 @@ jobs:
         run: |
           echo "uploding to s3 ..."
           aws s3 sync public s3://${{ secrets.S3_BUCKET }}/ --size-only --delete
-          aws cloudfront create-invalidation --region ap-northeast-1 --distribution-id E3I59QUS6FUN5Y --paths "/*"
+          aws cloudfront create-invalidation --region ap-northeast-1 --distribution-id E3IN91Z3S4BLZO --paths "/*"
