@@ -1,6 +1,9 @@
 # Blog
 AWSで運用しているブログの中身
 
+＃ 構成図  
+![SS2024-01-1019 28 49](https://github.com/yukidevv/blog/assets/31511996/7ef683de-c25f-4d38-bcfc-97e4b3526f15)
+
 # Clone
 サブモジュール含めてCloneする
 ```
@@ -26,3 +29,4 @@ hugo server -D
 draft: true<br>
 ↓<br>
 draft: false
+
