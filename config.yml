@@ -36,3 +36,7 @@ menu:
       name: Blog
       url: post/
       weight: 10
+    - identifier: search
+      name: Search
+      url: "search/"
+      weight: 10
