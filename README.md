@@ -3,7 +3,7 @@ AWSで運用しているブログの中身
 https://yukidev.net/
 
 ＃ 構成図  
-![SS2024-01-1019 28 49](![SS2024-02-1713 50 44](https://github.com/yukidevv/blog/assets/31511996/2c5ced48-5810-4c1b-b1d8-082068d7ba4a)
+![SS2024-01-1019 28 49]![SS2024-02-1713 50 44](https://github.com/yukidevv/blog/assets/31511996/2c5ced48-5810-4c1b-b1d8-082068d7ba4a)
 
 # Clone
 サブモジュール含めてCloneする
