@@ -1,0 +1,28 @@
+{{ define "main" }}
+<!--  Custom CSS  -->
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  <div>
+    <!-- 新しい年別にループする -->
+    {{ $pages := .Data.Pages.ByTitle }}
+    {{ if eq .Type "years" }}
+      {{ $pages = $pages.Reverse }}
+    {{ end }}
+    {{ range $pages }}
+    <div class="years">
+      {{ $anchor := anchorize .Title }}
+      <a href="{{ .Permalink | absURL }}">
+        <strong><h2>{{ .Title }}</h2></strong>
+      </a>
+    </div>
+    <ul>
+      <!-- 年別の記事一覧ループ -->
+      {{ range .Data.Pages.ByTitle }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    <hr class="years_article">
+    {{ end }}
+  </div>
+{{ end }}

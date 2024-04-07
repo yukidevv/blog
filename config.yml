@@ -10,13 +10,16 @@ params:
     favicon16x16: "assets/favicon-16x16.png" 
     favicon32x32: "assets/favicon-32x32.png" 
     apple_touch_icon: "assets/apple-touch-icon.png"
-  homeInfoParams:
-    Title: yukidev 
-    Content: >
-      Welcome to my blog.
-
-      - PGP Public [Key](content/yuki.asc) (Fingerprint: E97D 6124 2700 292C 4F45 E4D0 B793 8CF5 1D1A 72C8)
-
+  profileMode:
+    enabled: true
+    Title: Welcome to my blog.
+    subtitle: >
+      PGP Public [Key](content/yuki.asc) (Fingerprint: E97D 6124 2700 292C 4F45 E4D0 B793 8CF5 1D1A 72C8)
+    buttons:
+     - name: Posts
+       url: "years/"
+     - name: About
+       url: "about/"
   socialIcons:
     - name: x
       url: https://x.com/nomad0481
@@ -26,17 +29,12 @@ params:
       url: mailto:nomad048@gmail.com
     - name: rss
       url: https://yukidev.net/index.xml
+  customCSS: ["/css/custom.css"]
 menu:
   main:
-    - identifier: about  
-      name: About
-      url: about/about
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: post/
-      weight: 10
     - identifier: search
       name: Search
       url: "search/"
       weight: 10
+taxonomies:
+  category: "years"
