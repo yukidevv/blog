@@ -24,7 +24,7 @@ hugo new post/xxxx.md
 
 # 記事内容の確認とビルド時の注意
 ```
-hugo server -D
+hugo server --renderToDisk=false
 ```
 ビルドする際には以下の変更を行うこと<br>
 draft: true<br>
