@@ -24,7 +24,7 @@ hugo new post/xxxx.md
 
 # 記事内容の確認とビルド時の注意
 ```
-hugo server --renderToDisk=false
+hugo server --renderToMemory
 ```
 ビルドする際には以下の変更を行うこと<br>
 draft: true<br>
