@@ -8,7 +8,7 @@ https://yukidev.net/
 # Clone
 サブモジュール含めてCloneする
 ```
-git clone --recursive {git@github.com:yukidevv/blog.git}
+git clone --recursive git@github.com:yukidevv/blog.git
 ```
 
 # Pull
