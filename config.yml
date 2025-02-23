@@ -1,10 +1,11 @@
-baseURL: https://yukidev.net
+baseURL: https://yukidev.net/blog
 languageCode: en-us
 title: yukidev
 theme: PaperMod
 pluralizeListTitles: false
 
 params:
+  social: true
   assets:
     favicon: "assets/favicon.ico"
     favicon16x16: "assets/favicon-16x16.png" 
