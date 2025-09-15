@@ -33,7 +33,7 @@ params:
     - name: email
       url: mailto:nomad048@gmail.com
     - name: rss
-      url: https://yukidev.net/index.xml
+      url: https://yukidev.net/blog/index.xml
   customCSS: ["/css/custom.css"]
 menu:
   main:
