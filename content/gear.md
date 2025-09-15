@@ -1,7 +1,7 @@
 # 使用中ギア
 - デスクギア
-    - キーボード1 - PFU hhkb professional hybrid type s
-    - キーボード2 - PFU hhkb professional2(BT化、バッテリー駆動化に改造済)
+    - キーボード01 - PFU hhkb professional hybrid type s
+    - キーボード02 - PFU hhkb professional2(BT化、バッテリー駆動化に改造済)
     - マウス - Logicool G304
     - モニタ - LG 27GN800-B 27inch WQHD 144Hz
     - スマートフォン - Samsung Galaxy S24
