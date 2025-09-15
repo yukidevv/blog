@@ -19,10 +19,12 @@ params:
     Title: Welcome to my blog
     subtitle: I have a poorly written blog.
     buttons:
-     - name: Posts
-       url: "years/"
-     - name: About
-       url: "about/"
+      - name: About
+        url: "about/"
+      - name: Posts
+        url: "years/"
+      - name: gear
+        url: "gear/"
   socialIcons:
     - name: x
       url: https://x.com/yukidevvv
