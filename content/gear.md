@@ -1,13 +1,13 @@
 # 使用中ギア
 - デスクギア
     - キーボード1 - PFU hhkb professional hybrid type s
-    - キーボード2 - PFU hhkb professional2(BT、バッテリー駆動改造済)
+    - キーボード2 - PFU hhkb professional2(BT化、バッテリー駆動化に改造済)
     - マウス - Logicool G304
     - モニタ - LG 27GN800-B 27inch WQHD 144Hz
     - スマートフォン - Samsung Galaxy S24
     - イーブックリーダー - Amazon kindle paper white 
 
 - コンピュータ
-    - machine01 - Ryzen9700X + 64GB RAM + Radeon RX 9070XT
+    - machine01 - Ryzen7 9700X + 64GB RAM + Radeon RX 9070XT
     - machine02 - Lenovo Thinkpad X13 gen1
     - machine03 - Raspberry Pi5

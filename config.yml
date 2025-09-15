@@ -16,14 +16,14 @@ params:
     apple_touch_icon: "assets/apple-touch-icon.png"
   profileMode:
     enabled: true
-    Title: Welcome to my blog
-    subtitle: I have a poorly written blog.
+    Title: yukidev.net
+    subtitle: 稚拙なサイトに候
     buttons:
       - name: About
         url: "about/"
       - name: Posts
         url: "years/"
-      - name: gear
+      - name: Gear
         url: "gear/"
   socialIcons:
     - name: x
