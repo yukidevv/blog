@@ -29,6 +29,7 @@ hugo server --renderToMemory
 PaperModとの相性でbuild出来ないので以下のコマンドで実施している  
 ```
 docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts-0.145.0 server --renderToMemory
+docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts-0.145.0 build #ビルド時
 ```
 ビルドする際には以下の変更を行うこと<br>
 draft: true<br>
