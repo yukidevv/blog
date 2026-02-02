@@ -43,3 +43,6 @@ menu:
       weight: 10
 taxonomies:
   category: "years"
+services:
+  rss:
+    limit: 10
