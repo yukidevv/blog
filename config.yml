@@ -9,6 +9,9 @@ params:
   dateFormat: "2006/01/02"
   showReadingTime: true
   social: true
+  ShowPostNavLinks: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
   assets:
     favicon: "assets/favicon.ico"
     favicon16x16: "assets/favicon-16x16.png" 
