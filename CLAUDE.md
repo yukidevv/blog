@@ -47,9 +47,4 @@ years: ["2025"]
 
 ### Deployment
 
-Push to `main` triggers `.github/workflows/gh-pages.yml`:
-1. Builds with Hugo
-2. Syncs `public/` to S3 (`--size-only --delete`)
-3. Invalidates CloudFront distribution `E3IN91Z3S4BLZO`
-
-AWS credentials use OIDC (role assumed via `AWS_ROLE_TO_ASSUME` secret).
+Push to `main` triggers a git hook on a self-hosted Raspberry Pi server, which builds the site and deploys `public/` via rsync.
