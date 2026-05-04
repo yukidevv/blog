@@ -26,9 +26,9 @@ hugo server --renderToMemory
 ```
 
 ## Docker を使う場合
-```
-docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts server --renderToMemory
-docker run -v .:/src --rm hugomods/hugo:exts build
+```bash
+docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts server --renderToMemory #サイトテスト時
+docker run -v .:/src --rm hugomods/hugo:exts build # publicフォルダ作成時
 ```
 ビルドする際には以下の変更を行うこと<br>
 draft: true<br>
