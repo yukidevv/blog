@@ -4,24 +4,24 @@ https://yukidev.net/blog/
 
 # Clone
 サブモジュール含めてCloneする
-```
+```bash
 git clone --recursive git@github.com:yukidevv/blog.git
 ```
 
 # Pull
 サブモジュール含めての最新化
-```
+```bash
 git pull && git submodule update --init --recursive
 ```
 
 # 記事の作成方法
-```
+```bash
 hugo new post/xxxx.md
 ```
 
 # 記事内容の確認とビルド時の注意
 
-```
+```bash
 hugo server --renderToMemory
 ```
 
