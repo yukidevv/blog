@@ -1,0 +1,9 @@
+#/usr/bin/env bash
+
+conf_path="${PWD}/.githooks/conf.sh"
+source "${conf_path}"
+
+docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts build
+rsync -av --delete -e ssh ${BUILD_DIR} "${USER}@${IP}:${REMOTE_TMP_DIR}"
+ssh "${USER}@${IP}" "yes | sudo rm -r ${REMOTE_BLOG_DIR}"
+ssh "${USER}@${IP}" "sudo mv ${REMOTE_TMP_DIR} ${REMOTE_DOCUMENT_ROOT_DIR}"

@@ -1,0 +1,4 @@
+*
+!.gitignore
+!conf.sh.example
+!pre-push

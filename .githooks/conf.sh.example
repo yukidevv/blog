@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# This is example deploy shell script.
+
+USER=
+IP=
+BUILD_DIR=
+REMOTE_TMP_DIR=
+REMOTE_BLOG_DIR=
+REMOTE_DOCUMENT_ROOT_DIR=
