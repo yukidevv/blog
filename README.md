@@ -3,13 +3,13 @@
 https://yukidev.net/blog/
 
 ## Clone
-サブモジュール含めてCloneする
+まずサブモジュール含めてCloneする
 ```bash
 git clone --recursive git@github.com:yukidevv/blog.git
 ```
 
 ## Pull
-サブモジュール含めての最新化
+サブモジュール含めて最新化を行う
 ```bash
 git pull && git submodule update --init --recursive
 ```
@@ -28,10 +28,9 @@ hugo server --renderToMemory
 ## Docker を使う場合
 ```bash
 docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts server --renderToMemory #サイトテスト時
-docker run -v .:/src --rm hugomods/hugo:exts build # publicフォルダ作成時
+docker run -v .:/src --rm hugomods/hugo:exts build # ビルド時
 ```
-ビルドする際には以下の変更を行うこと<br>
+記事を公開する際は以下の変更を行うこと<br>
 draft: true<br>
 ↓<br>
 draft: false
-
