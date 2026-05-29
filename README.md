@@ -14,6 +14,10 @@ git clone --recursive git@github.com:yukidevv/blog.git
 git pull && git submodule update --init --recursive
 ```
 
+## push前の下準備
+```
+git config core.hooksPath .githooks
+```
 ## 記事の作成方法
 ```bash
 hugo new post/xxxx.md
