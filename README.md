@@ -28,7 +28,7 @@ hugo server --renderToMemory
 ## Docker を使う場合
 ```bash
 docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts server --renderToMemory #サイトテスト時
-docker run -v .:/src --rm hugomods/hugo:exts build # ビルド時
+docker run -v .:/src --rm hugomods/hugo:exts -gc --minify build # ビルド時
 ```
 記事を公開する際は以下の変更を行うこと<br>
 draft: true<br>
