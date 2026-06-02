@@ -1,5 +1,6 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 
+ps -p $$ -o comm=
 conf_path="${PWD}/.githooks/conf.sh"
 source "${conf_path}"
 
