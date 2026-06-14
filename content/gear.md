@@ -7,4 +7,4 @@
 
 - コンピュータ
     - machine01 - win11 + Ryzen7 9700X + 64GB RAM + Radeon RX 9070XT
-    - machine02 - Raspberry Pi5
+    - machine02(server) - Raspberry Pi5(8GM RAM)
