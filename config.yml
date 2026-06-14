@@ -38,6 +38,18 @@ params:
     - name: rss
       url: https://yukidev.net/blog/index.xml
   customCSS: ["/css/custom.css"]
+  # PaperMod標準検索（Fuse.js）の精度調整。デフォルトは緩く無関係な記事まで拾うため厳しめに。
+  fuseOpts:
+    threshold: 0.2          # あいまい度（0=完全一致, デフォルト0.4）
+    minMatchCharLength: 2   # 1文字ノイズを除外
+    ignoreLocation: true
+    keys:                   # 重み付け: タイトル重視・本文は弱め。permalinkは対象外
+      - name: title
+        weight: 0.7
+      - name: summary
+        weight: 0.2
+      - name: content
+        weight: 0.1
 menu:
   main:
     - identifier: search
@@ -46,6 +58,12 @@ menu:
       weight: 10
 taxonomies:
   category: "years"
+# PaperMod標準検索（Fuse.js）用に検索インデックス index.json を出力する
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 services:
   rss:
     limit: 10
