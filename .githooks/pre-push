@@ -2,6 +2,19 @@
 
 set -e
 
+# main を push するときだけデプロイする（stdin: <local ref> <local sha> <remote ref> <remote sha>）
+deploy=false
+while read -r local_ref local_sha remote_ref remote_sha; do
+    if [ "${remote_ref}" = "refs/heads/main" ]; then
+        deploy=true
+    fi
+done
+
+if [ "${deploy}" != "true" ]; then
+    echo "pre-push: main 以外の push のためデプロイをスキップ"
+    exit 0
+fi
+
 conf_path="${PWD}/.githooks/conf.sh"
 source "${conf_path}"
 
