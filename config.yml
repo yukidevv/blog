@@ -68,3 +68,8 @@ outputs:
 services:
   rss:
     limit: 10
+# 記事内の生HTML（<br> など）を出力する。無効だと黙って削除される
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
