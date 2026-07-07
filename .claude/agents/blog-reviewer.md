@@ -17,7 +17,8 @@ model: sonnet
 
 ## チェック観点
 
-### 1. Frontmatter（最重要・規約厳守）
+### 1. ファイル名・Frontmatter（最重要・規約厳守）
+- ファイル名が `YYYYMMDD.md`（日付のみ）形式か。リネームされた記事なら `aliases` で旧URLが維持されているか
 - `title`, `date`, `draft`, `years` が揃っているか
 - `date` は ISO 8601 + JST（`+09:00`）形式か。例: `2025-01-01T00:00:00+09:00`
 - `years` は記事の年と一致した文字列配列か。例: `years: ["2025"]`
