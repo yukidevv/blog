@@ -60,6 +60,6 @@ years: ["2025"]
 GitHub Actions は使っていない。デプロイは**ローカルの pre-push フック**（`.githooks/pre-push`）で行う:
 
 1. `git config core.hooksPath .githooks` を一度設定しておく（`.githooks/conf.sh` を `conf.sh.example` から作成）
-2. `git push` すると Docker で Hugo ビルドが走り、`public/` が自宅の Raspberry Pi サーバへ rsync され、ドキュメントルートに配置される
+2. **main を push したときのみ** Docker で Hugo ビルドが走り、`public/` が自宅の Raspberry Pi サーバへ rsync され、ドキュメントルートに配置される（他ブランチの push ではスキップされる）
 
-つまり **push = 即本番公開**。下書きを push する場合は `draft: true` にしておくこと。
+つまり **main への push = 即本番公開**。下書きを main に push する場合は `draft: true` にしておくこと。

@@ -40,7 +40,7 @@ docker run -v .:/src --rm hugomods/hugo:exts-0.154.5 -gc --minify build # ビル
 ```
 
 ## 公開
-push すると pre-push フックが Docker でビルドし、ラズパイへ rsync して**即本番公開**される  
+main を push すると pre-push フックが Docker でビルドし、ラズパイへ rsync して**即本番公開**される（他ブランチの push ではスキップ）  
 記事を公開する際は以下の変更を行うこと<br>
 draft: true<br>
 ↓<br>

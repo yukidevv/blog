@@ -51,4 +51,4 @@ hugo server --renderToMemory
 1. `draft: false` に変更する
 2. コミットして push する
 
-**注意: push = 即本番公開**（pre-push フックがビルドしてラズパイへ rsync する）。公開の push はユーザーの明示的な指示があるまで行わないこと。
+**注意: main への push = 即本番公開**（pre-push フックがビルドしてラズパイへ rsync する。他ブランチの push ではスキップ）。公開の push はユーザーの明示的な指示があるまで行わないこと。
