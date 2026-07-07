@@ -1,5 +1,6 @@
 baseURL: https://yukidev.net/blog
-defaultContentLanguage: jp
+defaultContentLanguage: ja
+languageCode: ja
 title: yukidev
 theme: PaperMod
 pluralizeListTitles: false
