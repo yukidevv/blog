@@ -38,7 +38,6 @@ params:
       url: mailto:nomad048@gmail.com
     - name: rss
       url: https://yukidev.net/blog/index.xml
-  customCSS: ["/css/custom.css"]
   # PaperMod標準検索（Fuse.js）の精度調整。デフォルトは緩く無関係な記事まで拾うため厳しめに。
   fuseOpts:
     threshold: 0.2          # あいまい度（0=完全一致, デフォルト0.4）
