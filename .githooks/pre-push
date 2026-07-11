@@ -2,12 +2,25 @@
 
 set -e
 
-ps -p $$ -o comm=
+# main を push するときだけデプロイする（stdin: <local ref> <local sha> <remote ref> <remote sha>）
+deploy=false
+while read -r local_ref local_sha remote_ref remote_sha; do
+    if [ "${remote_ref}" = "refs/heads/main" ]; then
+        deploy=true
+    fi
+done
+
+if [ "${deploy}" != "true" ]; then
+    echo "pre-push: main 以外の push のためデプロイをスキップ"
+    exit 0
+fi
+
 conf_path="${PWD}/.githooks/conf.sh"
 source "${conf_path}"
 
-docker run -v .:/src -p 1313:1313 --rm --user $(id -u):$(id -g) hugomods/hugo:exts --gc --minify build
+# ビルドの再現性のためイメージはバージョンタグで固定する（更新時はタグを上げる）
+docker run -v .:/src --rm --user $(id -u):$(id -g) hugomods/hugo:exts-0.154.5 --gc --minify build
 rsync -av --delete -e ssh ${BUILD_DIR} "${USER}@${IP}:${REMOTE_TMP_DIR}"
-ssh "${USER}@${IP}" "yes | sudo rm -r ${REMOTE_BLOG_DIR}"
+ssh "${USER}@${IP}" "sudo rm -rf ${REMOTE_BLOG_DIR}"
 ssh "${USER}@${IP}" "sudo mv ${REMOTE_TMP_DIR} ${REMOTE_DOCUMENT_ROOT_DIR}"
 rm -r ${BUILD_DIR}
