@@ -1,0 +1,34 @@
+# About ページの技術スタック一覧（{{< techstack >}} で表示）
+# icon は Simple Icons のスラッグ（https://simpleicons.org/）
+# Simple Icons にないものは static/ に画像を置き image: images/techstack/xxx.png で指定する
+- category: Language
+  items:
+    - { name: Python, icon: python }
+    - { name: JavaScript, icon: javascript }
+    - { name: TypeScript, icon: typescript }
+    - { name: PHP, icon: php }
+    - { name: Bash, icon: gnubash }
+- category: Backend
+  items:
+    - { name: Flask, icon: flask }
+    - { name: Hono, icon: hono }
+    - { name: Node.js, icon: nodedotjs }
+    - { name: Deno, icon: deno }
+- category: Database
+  items:
+    - { name: MySQL, icon: mysql }
+    - { name: SQLite, icon: sqlite }
+- category: Infrastructure
+  items:
+    - { name: Linux, icon: linux }
+    - { name: Ubuntu, icon: ubuntu }
+    - { name: Raspberry Pi, icon: raspberrypi }
+    - { name: Docker, icon: docker }
+- category: Development
+  items:
+    - { name: Git, icon: git }
+    - { name: GitHub, icon: github }
+    - { name: Gitea, icon: gitea }
+    - { name: Vim, icon: vim }
+    - { name: VS Code, image: images/techstack/vscode.svg }
+    - { name: WSL, image: images/techstack/wsl.svg }

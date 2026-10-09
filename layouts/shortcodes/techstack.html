@@ -1,0 +1,29 @@
+{{- /* data/techstack.yml の技術一覧をカテゴリ別カードで表示する */ -}}
+<style>
+.techstack{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0}
+.techstack-card{border:1px solid var(--border);border-radius:8px;padding:16px 12px;background:var(--entry)}
+.techstack-card h3{margin:0 0 12px;text-align:center;font-size:1.3rem}
+.techstack-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 8px;list-style:none;margin:0;padding:0}
+.post-content .techstack-items li{margin:0;width:72px;text-align:center;font-size:.75rem;color:var(--secondary)}
+.techstack-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin:0 auto 4px;border-radius:50%;background:#fff}
+.post-content .techstack-icon img{width:28px;height:28px;margin:0}
+</style>
+<div class="techstack">
+{{- range site.Data.techstack }}
+  <section class="techstack-card">
+    <h3>{{ .category }}</h3>
+    <ul class="techstack-items">
+    {{- range .items }}
+      <li>
+        <span class="techstack-icon">
+          {{- $src := printf "https://cdn.simpleicons.org/%s" .icon }}
+          {{- with .image }}{{ $src = . | relURL }}{{ end }}
+          <img src="{{ $src }}" alt="{{ .name }}" loading="lazy" width="28" height="28">
+        </span>
+        {{ .name }}
+      </li>
+    {{- end }}
+    </ul>
+  </section>
+{{- end }}
+</div>
