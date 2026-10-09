@@ -22,6 +22,10 @@ params:
     enabled: true
     Title: yukidev.net
     subtitle: 稚拙なサイトに候
+    imageUrl: "images/profile.jpg"
+    imageWidth: 150
+    imageHeight: 150
+    imageTitle: yukidev
     buttons:
       - name: About
         url: "about/"
