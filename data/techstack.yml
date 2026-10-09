@@ -16,7 +16,7 @@
     - { name: Deno, icon: deno }
 - category: Database
   items:
-    - { name: MySQL, icon: mysql }
+    - { name: MariaDB, icon: mariadb }
     - { name: SQLite, icon: sqlite }
 - category: Infrastructure
   items:
