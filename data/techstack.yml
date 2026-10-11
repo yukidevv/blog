@@ -12,7 +12,6 @@
   items:
     - { name: Flask, icon: flask }
     - { name: Hono, icon: hono }
-    - { name: Node.js, icon: nodedotjs }
     - { name: Deno, icon: deno }
 - category: Database
   items:
