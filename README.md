@@ -36,7 +36,7 @@ hugo server --renderToMemory
 本番ビルドと同じイメージタグ（`exts-0.154.5`）を使う
 ```bash
 docker run -v .:/src -p 1313:1313 --rm hugomods/hugo:exts-0.154.5 server --renderToMemory #サイトテスト時
-docker run -v .:/src --rm hugomods/hugo:exts-0.154.5 -gc --minify build # ビルド時
+docker run -v .:/src --rm hugomods/hugo:exts-0.154.5 --gc --minify build # ビルド時
 ```
 
 ## 公開
